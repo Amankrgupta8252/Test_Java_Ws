@@ -1,6 +1,6 @@
 public class java_nestedForLoop {
     public static void main(String[] args) {
-        // print zero to nine/
+        // print zero to nine
 
         for (int i = 0; i <= 7; i++) {
             for (int j = 0; j <= 7; j++) {
@@ -21,12 +21,11 @@ public class java_nestedForLoop {
         for (int i = 1; i <= rows; i++) {
             if (i == 1 || i == rows) {
                 for (int j = 1; j <= 3; j++) {
-                    if(j == 1){
+                    if(j == 1) {
                         System.out.print("  ");
                     }
-                    if(j== 3||j==8){
+                    else if(j== 3||j==8) {
                         System.out.print(" 1");
-
                     }
                 }
                 System.out.println();
@@ -42,7 +41,7 @@ public class java_nestedForLoop {
 
         for (int i = 0; i <= 7 ; i++) {
             for (int j = 0; j <= 7; j++) {
-                if (i == 0 || i == 7) {
+                if (i == 0 || i == 7 || (j == 0 && i <= 3) || (i == 3 && j <= 3)) {
                     System.out.print(" 2");
                 } else if (i == 7 - j) {
                     System.out.print("  2");
@@ -70,8 +69,6 @@ public class java_nestedForLoop {
 
         System.out.println();
         System.out.println();
-
-
 
         for (int i = 1; i <= 9; i++) {
             for (int j = 1; j <= 9; j++) {
@@ -161,13 +158,10 @@ public class java_nestedForLoop {
 }
 
 
-
-
-
 /*
 
 
- 0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0
  0           0 0
  0         0   0
  0       0     0
@@ -184,13 +178,13 @@ public class java_nestedForLoop {
    1
    1
    1
-   1
+1  1  1
 
 
  2 2 2 2 2 2 2 2
-              2
-            2
-          2
+ 2            2
+ 2          2
+ 2 2 2 2  2
         2
       2
     2
@@ -268,6 +262,5 @@ public class java_nestedForLoop {
                9
                9
  9 9 9 9 9 9 9 9
-
  
  */
